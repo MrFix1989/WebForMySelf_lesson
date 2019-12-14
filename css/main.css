@@ -8,8 +8,9 @@
     height:40px;
     margin:0 auto 30px;
     background-color:green;
-    transition-duration:1s, 3s;
-    transition-property: width, background;
+    /*transition-duration:1s, 3s;
+    transition-property: width, background;*/
+    transition: width 1s ease-in, background-color 3s cubic-bezier(0,1.11,1,.37); // сокращенный вариант записи( свойство скоростьЮ тип функции, через запятую следующее свойство)
 }
 
 
@@ -18,9 +19,9 @@
     background-color: aqua;
 }
 
-.block {
+/*.block {
     transition-timing-function: ease-in-out;
-}
+}*/
 
 .block-2 {
     transition-timing-function: linear;  //свойство смены стиля переходов
