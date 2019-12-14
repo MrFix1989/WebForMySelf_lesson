@@ -3,12 +3,12 @@
     margin:50px auto;
 }
 
-.button {
+[class^=button]{
     width:160px;
     color: cornflowerblue;
     background-color: burlywood;
     text-align:center;
-    margin: 50px auto;
+    margin: 70px auto;
     padding: 10px 5px;
     display:block;
     text-decoration: none;
@@ -21,6 +21,23 @@
     animation-name: btnAnimate2;
     animation-duration: 5s;
 }
+
+.button2 {
+    background-color: brown;
+    color: aqua;
+    animation-name: btnAnimate3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.button3 {
+    background-color: aquamarine;
+    color: black;
+    animation-name: btnAnimate4;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; //количество повторений анимации в данном случае свойство infinite приводит к бесконечному повторению
+}
+
 @keyframes btnAnimate {
     from {
         transform:rotate(0deg);
@@ -41,5 +58,40 @@
 
     75% {
         transform:rotate(180deg);
+    }
+}
+
+@keyframes btnAnimate3 {
+    0% {
+        transform: rotate(0deg) translateY(0deg);
+    }
+    33% {
+        transform: rotate(-15deg) translateY(50px);
+    }
+    50% {
+        width:250px;
+        color: #fff;
+        font-size: :20px;
+    }
+    66% {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes btnAnimate4 {
+    0% {
+        border-radius: 6px;
+    }
+    25% {
+        border-radius: 16px;
+    }
+    50% {
+        border-radius: 26px;
+    }
+    75% {
+        border-radius: 56px;
+    }
+    100% {
+        border-radius: 6px;
     }
 }
