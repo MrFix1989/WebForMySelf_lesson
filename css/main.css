@@ -3,16 +3,25 @@
     margin:50px auto;
 }
 
-.block {
+[class^=block] {
     width:150px;
     height:40px;
-    margin:0 auto;
+    margin:0 auto 30px;
     background-color:green;
-    transition-duration:3s, 1s;
+    transition-duration:1s, 3s;
     transition-property: width, background;
 }
-.block:hover {
+
+
+.content:hover [class^=block] {
     width:700px;
     background-color: aqua;
-    height:100px;
+}
+
+.block-2 {
+    transition-delay: 100ms;
+}
+
+.block-3 {
+    transition-delay: 200ms;
 }
