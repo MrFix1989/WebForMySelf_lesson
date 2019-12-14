@@ -27,5 +27,5 @@
 }
 
 .block-3 {
-    transition-timing-function: ease-out;
+    transition-timing-function: cubic-bezier(0,1.11,1,.37); // атрибут cubic-bezier генерирование по ссылке https://cubic-bezier.com/
 }
