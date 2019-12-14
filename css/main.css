@@ -17,3 +17,15 @@
     box-shadow: 0 5px 15px 2px  #ba9f34;
 }
 
+.button {
+    animation-name: btnAnimate;
+    animation-duration: 2s;
+}
+@keyframes btnAnimate {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
