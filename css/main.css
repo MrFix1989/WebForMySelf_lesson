@@ -8,7 +8,8 @@
     height:40px;
     margin:0 auto;
     background-color:green;
-    transition-duration:3s;
+    transition-duration:3s, 1s;
+    transition-property: width, background;
 }
 .block:hover {
     width:700px;
