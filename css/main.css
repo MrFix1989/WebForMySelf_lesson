@@ -18,8 +18,8 @@
 }
 
 .button {
-    animation-name: btnAnimate;
-    animation-duration: 2s;
+    animation-name: btnAnimate2;
+    animation-duration: 5s;
 }
 @keyframes btnAnimate {
     from {
@@ -27,5 +27,19 @@
     }
     to {
         transform:rotate(360deg);
+    }
+}
+
+@keyframes btnAnimate2 {
+    25% {
+        transform:rotate(70deg);
+    }
+
+    50% {
+        transform:rotate(10deg);
+    }
+
+    75% {
+        transform:rotate(180deg);
     }
 }
