@@ -3,30 +3,17 @@
     margin:50px auto;
 }
 
-[class^=block] {
-    width:150px;
-    height:40px;
-    margin:0 auto 30px;
-    background-color:green;
-    /*transition-duration:1s, 3s;
-    transition-property: width, background;*/
-    transition: width 1s ease-in, background-color 3s cubic-bezier(0,1.11,1,.37); // сокращенный вариант записи( свойство скоростьЮ тип функции, через запятую следующее свойство)
+.button {
+    width:160px;
+    color: cornflowerblue;
+    background-color: burlywood;
+    text-align:center;
+    margin: 50px auto;
+    padding: 10px 5px;
+    display:block;
+    text-decoration: none;
+    line-height: 18px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px 2px  #ba9f34;
 }
 
-
-.content:hover [class^=block] {
-    width:700px;
-    background-color: aqua;
-}
-
-/*.block {
-    transition-timing-function: ease-in-out;
-}*/
-
-.block-2 {
-    transition-timing-function: linear;  //свойство смены стиля переходов
-}
-
-.block-3 {
-    transition-timing-function: cubic-bezier(0,1.11,1,.37); // атрибут cubic-bezier генерирование по ссылке https://cubic-bezier.com/
-}
